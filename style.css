@@ -1,4 +1,18 @@
-@font-face { font-family: 'AllegroScript';  src: local('AllegroScript'), url('https://nomail.com.ua/files/woff/505ac0be32550c2e4f4d376f9bdde292.woff') format('woff'); }
+@font-face {
+    font-family: 'AllegroScript';
+    src: url('AllegroScript.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  } 
+
+  @font-face {
+    font-family: 'AllegroScript';
+    src:  url('AllegroScript.otf')  format('opentype'),
+       format('woff'), url('AllegroScript.ttf')  format('truetype'), url('AllegroScript.svg#AllegroScript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+   
 
 @import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic');
 
