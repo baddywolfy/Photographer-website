@@ -859,6 +859,17 @@ section.contacts ul.social-links {
  }
 
  @media (max-width: 970px) { 
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+
+
     .hero {
         width: 675px;
         margin-top: 15%;
