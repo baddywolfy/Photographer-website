@@ -978,6 +978,10 @@ section.contacts ul.social-links {
         padding: 16px 52px;
     }
 
+    .img-wrap {
+        bottom: -40px;
+    }
+
     .about .left .img-wrap2 {
         width: 340px;
         height: 460px;
