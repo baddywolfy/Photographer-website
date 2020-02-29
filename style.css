@@ -1,14 +1,6 @@
-@font-face {
-    font-family: 'AllegroScript';
-    src: url('AllegroScript.eot') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-  } 
-
   @font-face {
     font-family: 'AllegroScript';
-    src:  url('AllegroScript.otf')  format('opentype'),
-       format('woff'), url('AllegroScript.ttf')  format('truetype'), url('AllegroScript.svg#AllegroScript') format('svg');
+    src: url('assets/Fonts/AllegroScript.ttf')  format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -63,6 +55,8 @@ section.top {
 
 .logo a {
     color: #fff;
+    font-family: 'AllegroScript', serif;
+    font-size: 42px;
 }
 
 nav {
@@ -81,6 +75,7 @@ nav .container {
 
 .nav a {
     color: #fff;
+    letter-spacing: 1px;
 }
 
 .nav a.link-active:after {
@@ -457,6 +452,12 @@ section.featured {
     height: 18px;
 }
 
+section.gallery {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 section.gallery .gallery-wrapper {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -526,6 +527,27 @@ section.gallery .gallery-wrapper {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+section.gallery .hero-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: fit-content;
+    margin-bottom: 45px;
+    background: -webkit-linear-gradient( 90deg, rgb(255,170,7) 0%, rgb(255,170,7) 0%, rgb(255,194,7) 100%);
+}
+
+section.gallery .hero-button:hover {
+    background: -webkit-linear-gradient( 90deg, rgb(255,194,7) 0%,  rgb(255,194,7) 0%, rgb(255,170,7) 100%);
+}
+
+section.gallery .hero-button a {
+    font-size: 24px;
+    color: #81036e;
+    text-transform: uppercase;
+    padding: 26px 70px ;
 }
 
 /*/////////////////////////*/
