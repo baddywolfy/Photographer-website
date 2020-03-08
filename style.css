@@ -98,6 +98,10 @@ nav .container {
     padding-left: 40px;
 }
 
+.menu {
+    display: none;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -813,6 +817,12 @@ section.contacts ul.social-links {
 
 
  @media (max-width: 1080px) { 
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+    
     .hero {
         width: 962px;
         margin-top: 15%;
