@@ -29,6 +29,7 @@ body {
     color: #fff;
     font-family: 'PT Serif', serif;
     font-weight: normal;
+    
 }
 
 /* Верхняя секция */
@@ -175,6 +176,7 @@ nav .container {
 
 section.about {
     display: flex;
+    overflow: hidden;
 }
 
 .about .left {
@@ -576,6 +578,7 @@ section.gallery .hero-button a {
     background: url(assets/img/pexels-photo-134469.png) center center;
     background-size: cover;
     padding-bottom: 75px;
+    overflow: hidden;
 }
 
 .contacts:after {
