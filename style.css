@@ -225,6 +225,10 @@ section.about .section-title:after {
     transition-duration: 500ms;
 }
 
+.about .left .img-wrap2 .img-hidden {
+    display: none;
+}
+
 .about .left .img-wrap2:hover img {
     width: 100%;
     max-height: 100%;
@@ -859,16 +863,77 @@ section.contacts ul.social-links {
  }
 
  @media (max-width: 970px) { 
-    .nav {
+    .navbar ul {
         display: none;
     }
 
-    .menu {
-        text-transform: uppercase;
-        letter-spacing: 2px;
+    nav.nav-active {
+        background-color: #fff;
+        height: 100vh;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 9999;
     }
 
+    .nav-active .navbar {
+        height: 100%;
+        width: 100%;
+    }
 
+    nav.nav-active .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-active .logo a {
+        display: none;
+    }
+
+    .nav-active .navbar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .nav-active .navbar ul li {
+        text-align: center;
+        padding-left: 0;
+        margin: 30px 0;
+    }
+
+    .nav-active .navbar ul li:hover {
+        background-color: rgb(36, 233, 223);
+    }
+
+    .nav-active .navbar li:hover a:after {
+        display: none;
+    }
+
+    .nav-active .navbar ul li a {
+        color: #000;
+    }
+
+    .menu {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: red;
+    }
 
     .hero {
         width: 675px;
@@ -888,6 +953,29 @@ section.contacts ul.social-links {
 
     .hero .hero-button a {
         padding: 20px 58px;
+    }
+
+    .img-wrap img {
+        display: none;
+    }
+
+    .about .left .img-wrap2 {
+        border: 6px solid #5824ac;
+        overflow: hidden;
+        margin-bottom: 120px;
+    }
+
+    .about .left .img-wrap2 img {
+        transform: translate(0, 0);
+    }
+
+    .about .left .img-wrap2 img {
+        display: none;
+    }
+    
+    .about .left .img-wrap2 .img-hidden {
+        display: block;
+        height: 100%;
     }
 
     ul.social-links {
@@ -934,14 +1022,17 @@ section.contacts ul.social-links {
  @media (max-width: 690px) { 
 
     section.top {
-        height: 115vh;
+        height: 100vh;
     }
 
     .hero {
-        width: 410px;
-        margin-top: 13%;
-        padding: 65px 15px 62px;
-        overflow: hidden;
+        width: 520px;
+        position: absolute;
+        margin-top: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 0 50px;
     }
  
     .hero h1.hero-title {
@@ -950,6 +1041,7 @@ section.contacts ul.social-links {
 
     .hero .hero-subtitle {
         font-size: 22px;
+        line-height: 32px;
     }
 
     
@@ -983,7 +1075,11 @@ section.contacts ul.social-links {
  }
 
  @media (max-width: 470px) { 
- 
+    .hero {
+        width: 360px;
+    }
+
+
     .hero h1.hero-title {
         font-size: 44px;
     }

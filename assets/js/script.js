@@ -1,3 +1,13 @@
+(function () {
+  const burger = document.querySelector('.menu');
+  const nav = document.querySelector('.nav');
+  burger.addEventListener('click' , () => {
+    nav.classList.toggle('nav-active');
+  });
+}());
+
+
+
 var mySwiper = new Swiper ('.featured-slider', {
     // Optional parameters
     direction: 'horizontal',
