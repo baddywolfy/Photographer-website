@@ -100,6 +100,9 @@ nav .container {
 
 .menu {
     display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
 .hero {
@@ -818,11 +821,6 @@ section.contacts ul.social-links {
 
  @media (max-width: 1080px) { 
 
-    .menu {
-        display: block;
-        cursor: pointer;
-    }
-    
     .hero {
         width: 962px;
         margin-top: 15%;
@@ -873,6 +871,35 @@ section.contacts ul.social-links {
  }
 
  @media (max-width: 970px) { 
+
+    .menu {
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #fff;
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .menu div {
+        width: 36px;
+        height: 2px;
+        background-color: #fff;
+        margin: 5px 0;
+    }
+
+    nav.nav-active .menu {
+        border: 1px solid #000;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    nav.nav-active .menu div {
+        background-color: #000;
+    }
+
     .navbar ul {
         display: none;
     }
@@ -936,13 +963,6 @@ section.contacts ul.social-links {
 
     .nav-active .navbar ul li a {
         color: #000;
-    }
-
-    .menu {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        color: red;
     }
 
     .hero {
