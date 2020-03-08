@@ -7,6 +7,8 @@
 }());
 
 
+new WOW().init();
+
 
 var mySwiper = new Swiper ('.featured-slider', {
     // Optional parameters

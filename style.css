@@ -34,7 +34,7 @@ body {
 /* Верхняя секция */
 
 section.top {
-    height: 100vh;
+    height: 105vh;
     background: url("assets/img/background.jpg");
     background-position: 50% 0%;
     position: relative;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -36,7 +37,7 @@
             </div>
         </nav>
 
-        <div class="hero">
+        <div class="hero wow fadeIn"  data-wow-delay="1s">
             <h1 class="hero-title">Запечатли момент!</h1>
             <p class="hero-subtitle">Каждый момент нашей жизни очень ценен, и наша задача сделать так, чтобы он никогда
                 не был потерян</p>
@@ -50,7 +51,7 @@
     </section>
 
     <section class="about">
-        <div class="left">
+        <div class="left wow fadeIn" data-wow-delay="1s">
             <div class="section-title">
                 <h2>ПРО МЕНЯ</h2>
             </div>
@@ -61,7 +62,7 @@
         </div>
 
         <div class="right">
-            <div class="about-text">
+            <div class="about-text wow slideInRight">
                 <p>Меня зовут Наталья и я профессиональный фотограф и ретушер. Я предлагаю свои услуги как физическим
                     так и юридическим лицам по всей Области. Продли или запечатли свой любимый момент или событие в
                     памяти навсегда!</p>
@@ -112,10 +113,10 @@
     </section>
 
     <section class="featured">
-        <div class="section-title">
+        <div class="section-title wow slideInDown">
             <h2>ИЗБРАННЫЕ РАБОТЫ</h2>
         </div>
-        <div class="featured-slider">
+        <div class="featured-slider  wow fadeIn">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -175,7 +176,7 @@
         <div class="section-title">
             <h2>мои работы</h2>
         </div>
-        <div class="gallery-wrapper">
+        <div class="gallery-wrapper  wow fadeIn">
             <div class="gallery-item gallery-item-1">
                 <a href="assets/img/photo1.jpg" class="item-link" data-lightbox="gallery-set"
                     data-title="Click the right half of the image to move forward."><img src="assets/img/photo1.jpg"
@@ -210,7 +211,7 @@
             <h2>Контакты</h2>
         </div>
         <div class="contact-wrapper">
-            <div class="contacts-info">
+            <div class="contacts-info  wow slideInLeft">
                 <h3>Контактная информация</h3>
                 <div class="contacts-main-info">
                     <a class="phone-number" href="tel:+79510919157">+ 7 951 091 91 57</a>
@@ -251,7 +252,7 @@
                 <p class="copyright">Theme design by <a href="https://vk.com/baddywolfy"
                         class="copyright-link">Dimach</a></p>
             </div>
-            <div class="contact-form">
+            <div class="contact-form  wow slideInRight">
                 <h3>Заказать фотосъемку</h3>
                 <form action="#" method="post">
                     <label for="name">Имя
@@ -279,6 +280,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script defer src="assets/js/all.js"></script>
