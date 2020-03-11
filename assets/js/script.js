@@ -1,3 +1,11 @@
+function preload() {
+  const preloader = document.getElementById('preloader');
+  preloader.classList.add('preloader-hidden');
+}
+
+setTimeout(preload, 1800);
+
+
 (function () {
   const burger = document.querySelector('.menu');
   const nav = document.querySelector('.nav');

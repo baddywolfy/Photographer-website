@@ -32,6 +32,22 @@ body {
     
 }
 
+
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    overflow: visible;
+    background: #F1F2F3 url('preloader.gif') no-repeat center center;
+    transition: opacity 2s ease-in-out;
+}
+
+.preloader-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
 /* Верхняя секция */
 
 section.top {
