@@ -12,6 +12,9 @@ setTimeout(preload, 1800);
   burger.addEventListener('click' , () => {
     nav.classList.toggle('nav-active');
   });
+  $(nav).focusout(function(){
+    nav.classList.remove('nav-active');
+  });
 }());
 
 
@@ -66,3 +69,13 @@ var mySwiper = new Swiper ('.featured-slider', {
       el: '.swiper-scrollbar',
     },
   })
+
+
+
+  function ScrollToTop(){   
+    $("a[href='#top']").click(function() {
+      $("html, body").animate({ scrollTop: 0, behavior: 'smooth' });
+      return false;
+    });
+    
+};
